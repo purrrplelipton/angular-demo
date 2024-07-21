@@ -3,23 +3,25 @@
 @tailwind utilities;
 
 * {
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: #0002 transparent;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: #0002 transparent;
 }
 
 @media (prefers-color-scheme: dark) {
-  * {
-    scrollbar-color: #FFF2 transparent;
-  }
+	* {
+		scrollbar-color: #fff2 transparent;
+	}
 }
 
 :root {
-  @apply h-full min-h-[768px] flex flex-col items-stretch text-neutral-950 bg-neutral-50 dark:text-neutral-50 dark:bg-neutral-950;
-  body {
-    @apply font-be-vietnam-pro grow overflow-auto flex flex-col items-stretch;
-    app-root, app-home {
-      @apply contents;
-    }
-  }
+	@apply h-full min-h-[768px] flex flex-col items-stretch text-neutral-950 bg-neutral-50 dark:text-neutral-50 dark:bg-neutral-950;
+	body {
+		@apply font-be-vietnam-pro grow overflow-auto flex flex-col items-stretch;
+		app-root,
+		router-outlet,
+		app-details {
+			@apply contents;
+		}
+	}
 }
