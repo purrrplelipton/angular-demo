@@ -17,7 +17,7 @@ import { matPlace } from '@ng-icons/material-icons/baseline';
     >
       <img
         class="rounded-t-[inherit] aspect-video object-cover object-center"
-        [src]="housingLocation.photo"
+        src="{{ 'https://angular.io/assets/images/tutorials/faa/' + housingLocation.photo }}"
         alt="Exterior photo of {{ housingLocation.name }}"
       />
       <div class="m-5">

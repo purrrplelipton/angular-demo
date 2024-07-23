@@ -20,6 +20,7 @@
 		@apply font-be-vietnam-pro grow overflow-auto flex flex-col items-stretch;
 		app-root,
 		router-outlet,
+		app-home,
 		app-details {
 			@apply contents;
 		}
